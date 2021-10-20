@@ -1,0 +1,5 @@
+package com.test.agendalive.config.webconfig;
+
+public class WebConfig {
+
+}

@@ -1,0 +1,14 @@
+#data base configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/agendalive?currentSchema=public
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
+
+#port
+server.port: 8081
+
+Access-Control-Allow-Origin: http://localhost:4200
+
+#show sql
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE

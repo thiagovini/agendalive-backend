@@ -1,0 +1,22 @@
+package com.test.agendalive.repository;
+
+import java.awt.print.Pageable;
+import java.time.LocalDateTime;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.test.agendalive.entity.Live;
+
+import sun.jvm.hotspot.debugger.Page;
+
+@Repository
+public interface LiveRepository extends JpaRepository<Live, String> {
+	
+	Page<Live> findByLiveDateAfterOrderByLiveDateAsc(LocalDateTime date, Pageable pageable);
+	
+	Page<Live> findByLiveDateBeforeOrderByLiveDateDesc(LocalDateTime date, Pageable pageable);
+
+	Page<Live> findAll(Pageable pageable);
+
+}

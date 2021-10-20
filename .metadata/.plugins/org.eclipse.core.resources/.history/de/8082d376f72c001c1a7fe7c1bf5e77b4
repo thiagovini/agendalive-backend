@@ -1,0 +1,23 @@
+package com.test.agendalive.entity;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Entity;
+
+import org.springframework.data.annotation.Id;
+
+import lombok.Data;
+
+@Data
+@Entity
+public class Live {
+	
+	@Id
+    private String id;
+    private String liveName;
+    private String channelName;
+    private LocalDateTime liveDate;
+    private String liveLink;
+    private LocalDateTime registrationDate;
+
+}

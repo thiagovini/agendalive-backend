@@ -1,0 +1,19 @@
+#data base configuration
+#spring.datasource.url=jdbc:postgresql://localhost:5432/agendalive?currentSchema=public
+#spring.datasource.username=postgres
+#spring.datasource.password=postgres
+#spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
+
+#port
+server.port: 8081
+
+#show sql
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+
+spring.jpa.database=POSTGRESQL
+spring.jpa.show-sql=true
+spring.database.driverClassName=org.postgresql.Driver
+spring.datasource.url=jdbc:postgresql://localhost:5432/agendalive?currentSchema=public
+spring.datasource.username=postgres
+spring.datasource.password=1234
